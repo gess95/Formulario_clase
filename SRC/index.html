@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario con Diferentes Tipos de Datos</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario con Diferentes Tipos de Datos</h1>
+      <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" required />
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fechaNacimiento"
+          name="fechaNacimiento"
+          required
+        />
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+        <label for="color">Pick a color:</label>
+        <input type="color" id="color" name="color" />
+
+        <label for="url">Paste an url:</label>
+        <input type="url" id="url" name="url" />
+
+        <label for="document">Attach a file:</label>
+        <input type="file" id="document" name="document" />
+
+        <fieldset>
+          <legend>Género:</legend>
+          <label for="masculino"
+            ><input
+              type="radio"
+              id="masculino"
+              name="genero"
+              value="masculino"
+            />
+            Masculino</label
+          >
+          <label for="femenino"
+            ><input type="radio" id="femenino" name="genero" value="femenino" />
+            Femenino</label
+          >
+          <label for="otro"
+            ><input type="radio" id="otro" name="genero" value="otro" />
+            Otro</label
+          >
+        </fieldset>
+
+        <fieldset id="option">
+          <legend>Preferencias:</legend>
+          <label for="opcion1"
+            ><input
+              type="checkbox"
+              id="opcion1"
+              name="preferencias[]"
+              value="opcion1"
+            />
+            Opción 1</label
+          >
+          <label for="opcion2"
+            ><input
+              type="checkbox"
+              id="opcion2"
+              name="preferencias[]"
+              value="opcion2"
+            />
+            Opción 2</label
+          >
+          <label for="opcion3"
+            ><input
+              type="checkbox"
+              id="opcion3"
+              name="preferencias[]"
+              value="opcion3"
+            />
+            Opción 3</label
+          >
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
